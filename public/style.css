@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #060a15;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+header{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+header strong{
+  color: #26de81;
+}
+
+header  button{
+  background: none;
+  color: #26de81;
+  border: 1px solid #26de81;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+header  button:hover{
+  background: #26de81;
+  color: #0b152b;
+}
+
+#form {
+  background: #0b152b;
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 200px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background: #26de81;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  width: inherit;
+  margin-left: 20px;
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: #26de81;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+a {
+  color: #26de81;
+}
+
+.user{
+  background: #0b152b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  margin: 30px auto;
+  padding: 0 50px;
+  border-radius: 10px;
+}
+
+.delete{
+  background: #26de81;
+  color: #0b152b;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.msg{
+  background: rgba(38, 222, 130, 0.2);
+  position: absolute;
+  top: 20px;
+  left: 35%;
+  display: none;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+  width: 30%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  transition: 0.3s all;
+  animation: msg-anim 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes msg-anim{
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
